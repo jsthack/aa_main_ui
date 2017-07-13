@@ -63,7 +63,13 @@ $white: white;
 */
 * {
   margin: 0;
-  font-family: Open Sans, sans-serif; }
+  font-family: Open Sans, sans-serif !important; }
+
+body {
+  background-color: #2d3133; }
+
+.material-icons {
+  font-family: 'Material Icons' !important; }
 
 .container {
   background-color: #2d3133;
@@ -71,23 +77,48 @@ $white: white;
   height: 100%;
   position: absolute; }
 
-.row.navPanel {
+.navPanel {
   background-color: #212121;
   width: 80px;
-  height: 100%; }
+  height: 970px; }
 
-.col.s1.navigation {
+.sideNav {
   background-color: #212121;
-  height: 50%; }
-  .col.s1.navigation li {
+  height: 970px;
+  width: 81px;
+  float: left; }
+  .sideNav li {
     line-height: 60px;
     border-bottom: 1px solid #2d3133;
     padding: 8px 0 0 0; }
-  .col.s1.navigation i {
+  .sideNav i {
     font-size: 28px;
     color: #E5E5E5;
     padding: 0px 0px 0px 23px; }
-  .col.s1.navigation a {
+  .sideNav a {
     text-decoration: none; }
-  .col.s1.navigation li:hover {
+  .sideNav li:hover {
     background-color: #2979FF; }
+
+.row.header {
+  height: 85px; }
+
+.userSettings {
+  width: 260px;
+  height: 34px;
+  background-color: transparent;
+  border: 1px solid #E5E5E5;
+  float: right;
+  text-align: left;
+  padding: 1px 0px 0px 4px;
+  margin: 20px 18px 0 0;
+  border-radius: 4px; }
+  .userSettings i {
+    font-size: 26px;
+    color: #E5E5E5;
+    float: left;
+    padding: 0px 9px 0px 4px; }
+  .userSettings section {
+    font-size: 13px;
+    padding: 9px 0 0 0;
+    color: #E5E5E5; }

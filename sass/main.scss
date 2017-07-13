@@ -1,0 +1,94 @@
+//   ______     ______     ______     __    __     __     __   __
+//  /\  ___\   /\  __ \   /\  ___\   /\ "-./  \   /\ \   /\ "-.\ \
+//  \ \ \____  \ \ \/\ \  \ \___  \  \ \ \-./\ \  \ \ \  \ \ \-.  \
+//   \ \_____\  \ \_____\  \/\_____\  \ \_\ \ \_\  \ \_\  \ \_\\"\_\
+//    \/_____/   \/_____/   \/_____/   \/_/  \/_/   \/_/   \/_/ \/_/
+//
+
+@import 'icons.scss';
+
+/*----------------------
+1. VARIABLES -----------
+2. DOCUMENT ------------
+3. CONTAINER -----------
+4. HEADER --------------
+5. MAIN CONTENT --------
+6. SECTIONS ------------
+----------------------*/
+
+//======================
+// 1. VARIABLES --------
+//======================
+/*
+
+$textInputGray: #3e3e3e;
+$buttonGray: #474747;
+$lightGray: #8c8c8c;
+$textDrop: #6e7479;
+$mainRed: #dc4646;
+$mainBlue: #2979FF;
+$white: white;
+*/
+
+$bkg: #2d3133;
+$nav: #212121;
+$lightGray: #E5E5E5;
+$mainBlue: #2979FF;
+
+//======================
+// 2. DOCUMENT ---------
+//======================
+
+* { margin: 0; font-family: Open Sans, sans-serif; }
+
+//======================
+// 2. CONTAINER --------
+//======================
+
+.container {
+   background-color: $bkg;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+
+//======================
+// 2. HEADER -----------
+//======================
+
+.row.navPanel {
+   background-color: $nav;
+   width: 80px;
+   height: 100%;
+}
+
+.col.s1.navigation {
+   background-color: $nav;
+   height: 50%;
+   li {
+      line-height: 60px;
+      border-bottom: 1px solid $bkg;
+      padding: 8px 0 0 0;
+   }
+   i {
+      font-size: 28px;
+      color: $lightGray;
+      padding: 0px 0px 0px 23px;
+   }
+   a {
+      text-decoration: none;
+   }
+   li:hover {
+      background-color: $mainBlue;
+   }
+}
+
+
+
+
+
+
+
+//======================
+// 2. HEADER -----------
+//======================

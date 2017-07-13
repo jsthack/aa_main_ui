@@ -1,0 +1,77 @@
+$icomoon-font-path: "../fonts" !default;
+
+$icon-cart: "\e900";
+$icon-chart: "\e901";
+$icon-edit: "\e902";
+$icon-grid: "\e903";
+$icon-list: "\e904";
+$icon-plus: "\e905";
+$icon-settings: "\e906";
+$icon-ticket: "\e907";
+
+@font-face {
+  font-family: 'hyrax_icons';
+  src:  url('#{$icomoon-font-path}/hyrax_icons.eot?szstsd');
+  src:  url('#{$icomoon-font-path}/hyrax_icons.eot?szstsd#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/hyrax_icons.ttf?szstsd') format('truetype'),
+    url('#{$icomoon-font-path}/hyrax_icons.woff?szstsd') format('woff'),
+    url('#{$icomoon-font-path}/hyrax_icons.svg?szstsd#hyrax_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hyrax_icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cart {
+  &:before {
+    content: $icon-cart;
+  }
+}
+.icon-chart {
+  &:before {
+    content: $icon-chart;
+  }
+}
+.icon-edit {
+  &:before {
+    content: $icon-edit;
+  }
+}
+.icon-grid {
+  &:before {
+    content: $icon-grid;
+  }
+}
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus;
+  }
+}
+.icon-settings {
+  &:before {
+    content: $icon-settings;
+  }
+}
+.icon-ticket {
+  &:before {
+    content: $icon-ticket;
+  }
+}

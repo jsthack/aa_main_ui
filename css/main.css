@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'hyrax_icons';
+  src: url("../fonts/hyrax_icons.eot?szstsd");
+  src: url("../fonts/hyrax_icons.eot?szstsd#iefix") format("embedded-opentype"), url("../fonts/hyrax_icons.ttf?szstsd") format("truetype"), url("../fonts/hyrax_icons.woff?szstsd") format("woff"), url("../fonts/hyrax_icons.svg?szstsd#hyrax_icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hyrax_icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-cart:before {
+  content: ""; }
+
+.icon-chart:before {
+  content: ""; }
+
+.icon-edit:before {
+  content: ""; }
+
+.icon-grid:before {
+  content: ""; }
+
+.icon-list:before {
+  content: ""; }
+
+.icon-plus:before {
+  content: ""; }
+
+.icon-settings:before {
+  content: ""; }
+
+.icon-ticket:before {
+  content: ""; }
+
+/*----------------------
+1. VARIABLES -----------
+2. DOCUMENT ------------
+3. CONTAINER -----------
+4. HEADER --------------
+5. MAIN CONTENT --------
+6. SECTIONS ------------
+----------------------*/
+/*
+
+$textInputGray: #3e3e3e;
+$buttonGray: #474747;
+$lightGray: #8c8c8c;
+$textDrop: #6e7479;
+$mainRed: #dc4646;
+$mainBlue: #2979FF;
+$white: white;
+*/
+* {
+  margin: 0;
+  font-family: Open Sans, sans-serif; }
+
+.container {
+  background-color: #2d3133;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.row.navPanel {
+  background-color: #212121;
+  width: 80px;
+  height: 100%; }
+
+.col.s1.navigation {
+  background-color: #212121;
+  height: 50%; }
+  .col.s1.navigation li {
+    line-height: 60px;
+    border-bottom: 1px solid #2d3133;
+    padding: 8px 0 0 0; }
+  .col.s1.navigation i {
+    font-size: 28px;
+    color: #E5E5E5;
+    padding: 0px 0px 0px 23px; }
+  .col.s1.navigation a {
+    text-decoration: none; }
+  .col.s1.navigation li:hover {
+    background-color: #2979FF; }

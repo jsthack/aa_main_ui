@@ -36,6 +36,7 @@ $nav: #212121;
 $darkText: $bkg;
 $lightGray: #E5E5E5;
 $mainBlue: #2979FF;
+$mainYellow: #FFB300;
 $tabBkg: #292b2d;
 $activeTabBkg: #252525;
 
@@ -168,11 +169,11 @@ a.userSettings:hover {
 }
 
 //======================
-// 3. SEARCH & FILTER --
+// 3. SEARCH -----------
 //======================
 
 .row.searchFilter {
-   height: 100px;
+   height: 60px;
    margin-top: -10px;
    background-color: $activeTabBkg;
 }
@@ -205,10 +206,30 @@ input[type=search] {
    }
 }
 
-
+//======================
+// 3. FILTER -----------
+//======================
 
 .col.s7.filters {
-   height: 100px;
+   height: 100%;
    width: 74%;
-   background-color: yellow;
+}
+
+.tags {
+   position: absolute;
+   border-radius: 9px;
+   padding: 1px 0 0 11px;
+   margin: 18px 0 0 0;
+   width: 159px;
+   height: 22px;
+   background-color: #e5e5e5;
+   span {
+      line-height: 17px;
+      font-size: 12px;
+   }
+   .material-icons {
+      position: absolute;
+      padding: 1px 0 0 10px;
+      font-size: 17px;
+   }
 }

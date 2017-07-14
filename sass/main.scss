@@ -29,13 +29,15 @@ $mainRed: #dc4646;
 $mainBlue: #2979FF;
 $white: white;
 */
-
+//HYRAX COLORS
+$white: white;
 $bkg: #2d3133;
 $nav: #212121;
+$darkText: $bkg;
 $lightGray: #E5E5E5;
 $mainBlue: #2979FF;
-$inactiveTab: #292b2d;
-$activeTab: #252525;
+$tabBkg: #292b2d;
+$activeTabBkg: #252525;
 
 //======================
 // 2. DOCUMENT ---------
@@ -129,20 +131,63 @@ a.userSettings:hover {
 //======================
 
 .row.mainNav {
-   height: 500px;
+   height: 30px;
    padding: 0;
    .col.s12.tabBar {
       width: 470px;
       padding: 0;
    }
+}
+
+//======================
+// 3. TAB BAR ----------
+//======================
+
+.tabs {
+   width: 112%;
+   height: 40px;
    .tab {
-      background-color: $inactiveTab;
+      background-color: $lightGray;
+      border-right: 2px solid #2e3133;
+      line-height: 42px;
       a {
-         color: $lightGray;
+         color: $bkg;
+         font-size: 14px;
+         padding: 0 16px;
+      }
+      a:hover {
+         color: $mainBlue;
+         font-weight: 600;
       }
       a.active {
-         background-color: $activeTab;
-         color: $mainBlue;
+         background-color: $activeTabBkg;
+         color: #2979ff;
+         font-weight: 600;
       }
+   }
+}
+
+//======================
+// 3. SEARCH & FILTER --
+//======================
+
+.row.searchFilter {
+   height: 100px;
+   margin-top: -10px;
+   background-color: $activeTabBkg;
+}
+
+input[type=search] {
+   background-color: $lightGray;
+   color: $mainBlue;
+   border-radius: 3px;
+   font-size: 12px;
+   padding: 0px 0px 0px 10px;
+   border: none;
+   height: 27px;
+   width: 326px !important;
+   &:focus {
+      outline: none;
+      text-decoration: none;
    }
 }

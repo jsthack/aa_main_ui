@@ -129,15 +129,45 @@ a.userSettings:hover {
   border: none; }
 
 .row.mainNav {
-  height: 500px;
+  height: 30px;
   padding: 0; }
   .row.mainNav .col.s12.tabBar {
     width: 470px;
     padding: 0; }
-  .row.mainNav .tab {
-    background-color: #292b2d; }
-    .row.mainNav .tab a {
-      color: #E5E5E5; }
-    .row.mainNav .tab a.active {
+
+.tabs {
+  width: 112%;
+  height: 40px; }
+  .tabs .tab {
+    background-color: #E5E5E5;
+    border-right: 2px solid #2e3133;
+    line-height: 42px; }
+    .tabs .tab a {
+      color: #2d3133;
+      font-size: 14px;
+      padding: 0 16px; }
+    .tabs .tab a:hover {
+      color: #2979FF;
+      font-weight: 600; }
+    .tabs .tab a.active {
       background-color: #252525;
-      color: #2979FF; }
+      color: #2979ff;
+      font-weight: 600; }
+
+.row.searchFilter {
+  height: 100px;
+  margin-top: -10px;
+  background-color: #252525; }
+
+input[type=search] {
+  background-color: #E5E5E5;
+  color: #2979FF;
+  border-radius: 3px;
+  font-size: 12px;
+  padding: 0px 0px 0px 10px;
+  border: none;
+  height: 27px;
+  width: 326px !important; }
+  input[type=search]:focus {
+    outline: none;
+    text-decoration: none; }

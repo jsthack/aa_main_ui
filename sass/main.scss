@@ -34,12 +34,14 @@ $bkg: #2d3133;
 $nav: #212121;
 $lightGray: #E5E5E5;
 $mainBlue: #2979FF;
+$inactiveTab: #292b2d;
+$activeTab: #252525;
 
 //======================
 // 2. DOCUMENT ---------
 //======================
 
-* { margin: 0; font-family: Open Sans, sans-serif !important; }
+* { margin: 0; font-family: Open Sans, sans-serif !important; text-transform: capitalize; }
 body { background-color: $bkg; }
 .material-icons { font-family: 'Material Icons' !important; }
 
@@ -92,13 +94,12 @@ body { background-color: $bkg; }
 //======================
 
 .row.header {
-   height: 85px;
+   height: 54px;
 }
 
 .userSettings {
    width: 260px;
    height: 34px;
-   background-color: transparent;
    border: 1px solid $lightGray;
    float: right;
    text-align: left;
@@ -109,11 +110,39 @@ body { background-color: $bkg; }
       font-size: 26px;
       color: $lightGray;
       float: left;
-      padding: 0px 9px 0px 4px;
+      padding: 1px 13px 0px 5px;
    }
    section {
       font-size: 13px;
       padding: 9px 0 0 0;
       color: $lightGray;
+      font-weight: 200;
+   }
+}
+a.userSettings:hover {
+   background-color: $mainBlue;
+   border: none;
+}
+
+//======================
+// 3. MAIN CONTENT -----
+//======================
+
+.row.mainNav {
+   height: 500px;
+   padding: 0;
+   .col.s12.tabBar {
+      width: 470px;
+      padding: 0;
+   }
+   .tab {
+      background-color: $inactiveTab;
+      a {
+         color: $lightGray;
+      }
+      a.active {
+         background-color: $activeTab;
+         color: $mainBlue;
+      }
    }
 }

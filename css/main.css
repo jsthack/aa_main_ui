@@ -63,7 +63,8 @@ $white: white;
 */
 * {
   margin: 0;
-  font-family: Open Sans, sans-serif !important; }
+  font-family: Open Sans, sans-serif !important;
+  text-transform: capitalize; }
 
 body {
   background-color: #2d3133; }
@@ -101,12 +102,11 @@ body {
     background-color: #2979FF; }
 
 .row.header {
-  height: 85px; }
+  height: 54px; }
 
 .userSettings {
   width: 260px;
   height: 34px;
-  background-color: transparent;
   border: 1px solid #E5E5E5;
   float: right;
   text-align: left;
@@ -117,8 +117,27 @@ body {
     font-size: 26px;
     color: #E5E5E5;
     float: left;
-    padding: 0px 9px 0px 4px; }
+    padding: 1px 13px 0px 5px; }
   .userSettings section {
     font-size: 13px;
     padding: 9px 0 0 0;
-    color: #E5E5E5; }
+    color: #E5E5E5;
+    font-weight: 200; }
+
+a.userSettings:hover {
+  background-color: #2979FF;
+  border: none; }
+
+.row.mainNav {
+  height: 500px;
+  padding: 0; }
+  .row.mainNav .col.s12.tabBar {
+    width: 470px;
+    padding: 0; }
+  .row.mainNav .tab {
+    background-color: #292b2d; }
+    .row.mainNav .tab a {
+      color: #E5E5E5; }
+    .row.mainNav .tab a.active {
+      background-color: #252525;
+      color: #2979FF; }

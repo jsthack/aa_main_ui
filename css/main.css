@@ -159,15 +159,29 @@ a.userSettings:hover {
   margin-top: -10px;
   background-color: #252525; }
 
+.col.s3.input-field {
+  width: 21%; }
+
 input[type=search] {
   background-color: #E5E5E5;
   color: #2979FF;
   border-radius: 3px;
   font-size: 12px;
   padding: 0px 0px 0px 10px;
+  margin-left: 2.5rem !important;
   border: none;
   height: 27px;
   width: 326px !important; }
   input[type=search]:focus {
     outline: none;
     text-decoration: none; }
+
+.input-field .prefix {
+  color: #E5E5E5;
+  font-size: 29px;
+  line-height: 27px; }
+
+.col.s7.filters {
+  height: 100px;
+  width: 74%;
+  background-color: yellow; }

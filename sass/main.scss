@@ -177,12 +177,17 @@ a.userSettings:hover {
    background-color: $activeTabBkg;
 }
 
+.col.s3.input-field {
+   width: 21%;
+}
+
 input[type=search] {
    background-color: $lightGray;
    color: $mainBlue;
    border-radius: 3px;
    font-size: 12px;
    padding: 0px 0px 0px 10px;
+   margin-left: 2.5rem !important;
    border: none;
    height: 27px;
    width: 326px !important;
@@ -190,4 +195,20 @@ input[type=search] {
       outline: none;
       text-decoration: none;
    }
+}
+
+.input-field {
+   .prefix {
+      color: $lightGray;
+      font-size: 29px;
+      line-height: 27px;
+   }
+}
+
+
+
+.col.s7.filters {
+   height: 100px;
+   width: 74%;
+   background-color: yellow;
 }

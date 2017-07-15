@@ -132,12 +132,13 @@ a.userSettings:hover {
   height: 30px;
   padding: 0; }
   .row.mainNav .col.s12.tabBar {
-    width: 470px;
+    width: 40%;
     padding: 0; }
 
 .tabs {
   width: 112%;
-  height: 40px; }
+  height: 40px;
+  background-color: transparent; }
   .tabs .tab {
     background-color: #E5E5E5;
     border-right: 2px solid #2e3133;
@@ -155,12 +156,15 @@ a.userSettings:hover {
       font-weight: 600; }
 
 .row.searchFilter {
-  height: 60px;
+  height: 140px;
   margin-top: -10px;
   background-color: #252525; }
 
 .col.s3.input-field {
-  width: 21%; }
+  width: 412px;
+  margin: 11px 0 0 0;
+  padding: 6px 0px 7px 11px;
+  border-right: 1px solid #E5E5E5; }
 
 input[type=search] {
   background-color: #E5E5E5;
@@ -183,20 +187,31 @@ input[type=search] {
 
 .col.s7.filters {
   height: 100%;
-  width: 74%; }
+  width: 50%; }
+  .col.s7.filters .addFilter {
+    font-size: 34px;
+    color: #E5E5E5;
+    padding: 14px 15px 0px 8px; }
+    .col.s7.filters .addFilter:hover {
+      color: #2979FF; }
 
 .tags {
   position: absolute;
   border-radius: 9px;
   padding: 1px 0 0 11px;
-  margin: 18px 0 0 0;
+  margin: 20px 0 0 0;
   width: 159px;
   height: 22px;
   background-color: #e5e5e5; }
+  .tags:hover {
+    background-color: #FFB300;
+    color: white; }
   .tags span {
-    line-height: 17px;
+    color: #2d3133;
     font-size: 12px; }
   .tags .material-icons {
+    color: #2d3133;
+    font-weight: bold;
     position: absolute;
-    padding: 1px 0 0 10px;
-    font-size: 17px; }
+    padding: 2px 0 0 12px;
+    font-size: 15px; }

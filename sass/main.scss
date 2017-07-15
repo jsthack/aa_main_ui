@@ -135,7 +135,7 @@ a.userSettings:hover {
    height: 30px;
    padding: 0;
    .col.s12.tabBar {
-      width: 470px;
+      width: 40%;
       padding: 0;
    }
 }
@@ -147,6 +147,7 @@ a.userSettings:hover {
 .tabs {
    width: 112%;
    height: 40px;
+   background-color: transparent;
    .tab {
       background-color: $lightGray;
       border-right: 2px solid #2e3133;
@@ -173,13 +174,17 @@ a.userSettings:hover {
 //======================
 
 .row.searchFilter {
-   height: 60px;
+   //height: 60px;
+   height: 140px;
    margin-top: -10px;
    background-color: $activeTabBkg;
 }
 
 .col.s3.input-field {
-   width: 21%;
+   width: 412px;
+   margin: 11px 0 0 0;
+   padding: 6px 0px 7px 11px;
+   border-right: 1px solid $lightGray;
 }
 
 input[type=search] {
@@ -212,24 +217,38 @@ input[type=search] {
 
 .col.s7.filters {
    height: 100%;
-   width: 74%;
+   width: 50%;
+   .addFilter {
+      font-size: 34px;
+      color: $lightGray;
+      padding: 14px 15px 0px 8px;
+      &:hover {
+         color: $mainBlue;
+      }
+   }
 }
 
 .tags {
    position: absolute;
    border-radius: 9px;
    padding: 1px 0 0 11px;
-   margin: 18px 0 0 0;
+   margin: 20px 0 0 0;
    width: 159px;
    height: 22px;
    background-color: #e5e5e5;
+   &:hover {
+      background-color: $mainYellow;
+      color: $white;
+   }
    span {
-      line-height: 17px;
+      color: $bkg;
       font-size: 12px;
    }
    .material-icons {
+      color: $bkg;
+      font-weight: bold;
       position: absolute;
-      padding: 1px 0 0 10px;
-      font-size: 17px;
+      padding: 2px 0 0 12px;
+      font-size: 15px;
    }
 }

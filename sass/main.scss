@@ -8,27 +8,21 @@
 @import 'icons.scss';
 
 /*----------------------
-1. VARIABLES -----------
-2. DOCUMENT ------------
-3. CONTAINER -----------
+0. VARIABLES -----------
+1. DOCUMENT ------------
+2. CONTAINER -----------
+3. SIDE NAV ------------
 4. HEADER --------------
 5. MAIN CONTENT --------
-6. SECTIONS ------------
+6. TAB BAR -------------
+7. SEARCH BAR ----------
+8. FILTERS -------------
 ----------------------*/
 
 //======================
-// 1. VARIABLES --------
+// 0. VARIABLES --------
 //======================
-/*
 
-$textInputGray: #3e3e3e;
-$buttonGray: #474747;
-$lightGray: #8c8c8c;
-$textDrop: #6e7479;
-$mainRed: #dc4646;
-$mainBlue: #2979FF;
-$white: white;
-*/
 //HYRAX COLORS
 $white: white;
 $bkg: #2d3133;
@@ -43,7 +37,7 @@ $tabBkg: #292b2d;
 $activeTabBkg: #252525;
 
 //======================
-// 2. DOCUMENT ---------
+// 1. DOCUMENT ---------
 //======================
 
 * { margin: 0; font-family: Open Sans, sans-serif !important; text-transform: capitalize; }
@@ -62,7 +56,7 @@ body { background-color: $bkg; }
 }
 
 //======================
-// 2. HEADER -----------
+// 3. SIDE NAV ---------
 //======================
 
 .navPanel {
@@ -95,11 +89,39 @@ body { background-color: $bkg; }
 }
 
 //======================
-// 3. MAIN CONTENT -----
+// 4. HEADER -----------
 //======================
 
 .row.header {
    height: 54px;
+}
+
+.notifications {
+   margin: 20px 298px 0 0;
+   width: 34px;
+   height: 34px;
+   border: 1px solid white;
+   border-radius: 3px;
+   position: absolute;
+   right: 2px;
+   &:hover {
+      background-color: $mainBlue;
+   }
+   i {//notification bell icon
+      padding: 3px 0 0 4px;
+      color: $lightGray;
+   }
+   span {//notification number buble
+          padding: 4px 0 0 7px;
+      margin: -41px 0 0 21px;
+      width: 22px;
+      font-size: 14px;
+      border-radius: 16px;
+      height: 22px;
+      background-color: #dc4646;
+      color: white;
+      position: absolute;
+   }
 }
 
 .userSettings {
@@ -111,13 +133,15 @@ body { background-color: $bkg; }
    padding: 1px 0px 0px 4px;
    margin: 20px 18px 0 0;
    border-radius: 4px;
-   i {
+   position: absolute;
+   right: 2px;
+   i {//user icon
       font-size: 26px;
       color: $lightGray;
       float: left;
       padding: 1px 13px 0px 5px;
    }
-   section {
+   section {//username
       font-size: 13px;
       padding: 9px 0 0 0;
       color: $lightGray;
@@ -126,11 +150,11 @@ body { background-color: $bkg; }
 }
 a.userSettings:hover {
    background-color: $mainBlue;
-   border: none;
+   //border: none;
 }
 
 //======================
-// 3. MAIN CONTENT -----
+// 5. MAIN CONTENT -----
 //======================
 
 .row.mainNav {
@@ -143,7 +167,7 @@ a.userSettings:hover {
 }
 
 //======================
-// 3. TAB BAR ----------
+// 6. TAB BAR ----------
 //======================
 
 .tabs {
@@ -172,7 +196,7 @@ a.userSettings:hover {
 }
 
 //======================
-// 3. SEARCH -----------
+// 7. SEARCH -----------
 //======================
 
 .row.searchFilter {
@@ -214,7 +238,7 @@ input[type=search] {
 }
 
 //======================
-// 3. FILTER -----------
+// 8. FILTERS ----------
 //======================
 
 .col.s7.filters {
@@ -268,33 +292,45 @@ input[type=search] {
    }
    #tag1 {
       width: 163px;
+      span {
+         margin: 0px 0px 0px 53px;
+         position: absolute;
+         font-style: italic;
+         color: $mainYellow;
+         text-transform: lowercase;
+      }
+   }
+   #tag2{
+      span {
+         margin: 0px 0px 0px 53px;
+         position: absolute;
+         font-style: italic;
+         color: $mainYellow;
+         text-transform: lowercase;
+      }
    }
    #tag3 {
       width: 207px;
    }
 }
 
-.tags {
-   position: absolute;
-   border-radius: 9px;
-   padding: 1px 0 0 11px;
-   margin: 20px 0 0 65px;
-   width: 159px;
-   height: 22px;
-   background-color: #e5e5e5;
-   &:hover {
-      background-color: $mainYellow;
-      color: $white;
-   }
+.closeFilters {
+   display: inline-block;
+   border-left: 1px solid white;
+   padding: 11px 0px 11px 16px;
+   margin: 10px 0px 0px -31px;
    span {
-      color: $bkg;
-      font-size: 12px;
+      padding: 0 0 0 0;
+      font-size: 13px;
+      color: $lightGray;
    }
-   .material-icons {
-      color: $bkg;
-      font-weight: bold;
+   i {
+      margin: -8px 0px 0px 62px;
       position: absolute;
-      padding: 2px 0 0 12px;
-      font-size: 15px;
+      line-height: 0;
+      color: $mainYellow;
+      &:hover {
+         color: $mainRed;
+      }
    }
 }

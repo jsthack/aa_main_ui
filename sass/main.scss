@@ -35,8 +35,10 @@ $bkg: #2d3133;
 $nav: #212121;
 $darkText: $bkg;
 $lightGray: #E5E5E5;
-$mainBlue: #2979FF;
+//$mainBlue: #2979FF;
+$mainBlue: #448AFF;
 $mainYellow: #FFB300;
+$mainRed: #dc4646;
 $tabBkg: #292b2d;
 $activeTabBkg: #252525;
 
@@ -163,7 +165,7 @@ a.userSettings:hover {
       }
       a.active {
          background-color: $activeTabBkg;
-         color: #2979ff;
+         color:$mainBlue;
          font-weight: 600;
       }
    }
@@ -232,7 +234,43 @@ input[type=search] {
    }
    i.icon-filter2 {
       font-size: 18px;
-      color: #252525;
+      color: $bkg;
+   }
+}
+
+.filterTags {
+   margin: 2px 0px 0px 61px;
+   li {
+      float: left;
+      margin: 17px 49px 0px 0px;
+      padding: 6px 0px 0px 12px;
+      font-size: 12px;
+      background-color: $lightGray;
+      border-radius: 10px;
+      height: 23px;
+      width: 276px;
+      a {
+         color: $bkg;
+         &:hover {
+            color: $mainBlue;
+         }
+         .material-icons {
+            color: $bkg;
+            font-size: 12px;
+            font-weight: bold;
+            position: absolute;
+            padding: 0px 0px 0px 15px;
+            &:hover {
+               color: $mainRed;
+            }
+         }
+      }
+   }
+   #tag1 {
+      width: 163px;
+   }
+   #tag3 {
+      width: 207px;
    }
 }
 

@@ -2016,7 +2016,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #2979FF; }
+  border-left: 5px solid #448AFF; }
 
 i {
   line-height: inherit; }
@@ -2055,7 +2055,7 @@ video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #2979FF; }
+    background-color: #448AFF; }
   .pagination li.disabled a {
     cursor: default;
     color: #999; }
@@ -2190,7 +2190,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #2979FF; }
+  background-color: #448AFF; }
   .page-footer .footer-copyright {
     overflow: hidden;
     min-height: 50px;
@@ -3093,7 +3093,7 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #2979FF;
+  background-color: #448AFF;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -3633,7 +3633,8 @@ small {
   .tabs .indicator {
     position: absolute;
     top: 0;
-    background-color: #2979FF;
+    height: 2.5px;
+    background-color: #448AFF;
     will-change: left, right; }
 
 @media only screen and (max-width: 992px) {
@@ -5260,11 +5261,11 @@ input[type=range]:focus::-ms-fill-upper {
   .table-of-contents a:hover {
     color: #a8a8a8;
     padding-left: 19px;
-    border-left: 1px solid #2979FF; }
+    border-left: 1px solid #448AFF; }
   .table-of-contents a.active {
     font-weight: 500;
     padding-left: 18px;
-    border-left: 2px solid #2979FF; }
+    border-left: 2px solid #448AFF; }
 
 .side-nav {
   position: fixed;
@@ -5408,7 +5409,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav .collapsible-body > ul:not(.collapsible) > li.active,
 .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #2979FF; }
+  background-color: #448AFF; }
   .side-nav .collapsible-body > ul:not(.collapsible) > li.active a,
   .side-nav.fixed .collapsible-body > ul:not(.collapsible) > li.active a {
     color: #fff; }
@@ -5959,7 +5960,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: absolute;
   font-size: 1rem;
   border-radius: 50%;
-  background-color: #2979FF;
+  background-color: #448AFF;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;

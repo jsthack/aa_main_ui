@@ -37,8 +37,10 @@ $white: white;
 $bkg: #2d3133;
 $nav: #212121;
 $lightGray: #E5E5E5;
-$mainBlue: #2979FF;
+//$mainBlue: #2979FF;
+$mainBlue: #448AFF;
 $mainYellow: #FFB300;
+$mainRed: #dc4646;
 
 $primary-color: $mainBlue !default;
 $primary-color-light: lighten($primary-color, 15%) !default;

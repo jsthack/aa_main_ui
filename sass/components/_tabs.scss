@@ -74,7 +74,7 @@
   .indicator {
     position: absolute;
     top: 0;
-    //height: 2.5px;
+    height: 2.5px;
     background-color: $tabs-underline-color;
     will-change: left, right;
   }

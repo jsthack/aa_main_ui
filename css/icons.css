@@ -19,6 +19,12 @@ i {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-filter2:before {
+  content: ""; }
+
+.icon-filter:before {
+  content: ""; }
+
 .icon-cart:before {
   content: ""; }
 

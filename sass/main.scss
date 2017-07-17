@@ -218,13 +218,21 @@ input[type=search] {
 .col.s7.filters {
    height: 100%;
    width: 50%;
-   .addFilter {
-      font-size: 34px;
-      color: $lightGray;
-      padding: 14px 15px 0px 8px;
+   a.filterButton {
+      position: absolute;
+      border-radius: 3px;
+      padding: 7px 0px 0px 6px;
+      margin: 15px 0px 0px 10px;
+      width: 31px;
+      height: 30px;
+      background-color: $lightGray;
       &:hover {
-         color: $mainBlue;
+         background-color: $mainYellow;
       }
+   }
+   i.icon-filter2 {
+      font-size: 18px;
+      color: #252525;
    }
 }
 
@@ -232,7 +240,7 @@ input[type=search] {
    position: absolute;
    border-radius: 9px;
    padding: 1px 0 0 11px;
-   margin: 20px 0 0 0;
+   margin: 20px 0 0 65px;
    width: 159px;
    height: 22px;
    background-color: #e5e5e5;

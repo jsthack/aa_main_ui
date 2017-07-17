@@ -8,6 +8,8 @@ $icon-list: "\e904";
 $icon-plus: "\e905";
 $icon-settings: "\e906";
 $icon-ticket: "\e907";
+$icon-filter: "\e908";
+$icon-filter2: "\e909";
 
 @font-face {
   font-family: 'hyrax_icons';
@@ -35,6 +37,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-filter2 {
+  &:before {
+    content: $icon-filter2;
+  }
+}
+.icon-filter {
+  &:before {
+    content: $icon-filter;
+  }
+}
 .icon-cart {
   &:before {
     content: $icon-cart;

@@ -58,15 +58,9 @@ body { background-color: $bkg; }
 // 3. SIDE NAV ---------
 //======================
 
-.navPanel {
-   background-color: $nav;
-   width: 80px;
-   height: 970px;
-}
-
 .sideNav {
    background-color: $nav;
-   height: 970px;
+   height: 1970px;
    width: 81px;
    float: left;
    li {
@@ -92,7 +86,7 @@ body { background-color: $bkg; }
 //======================
 
 .row.header {
-   height: 54px;
+   height: 15px;
 }
 
 .notifications {
@@ -145,6 +139,7 @@ body { background-color: $bkg; }
       padding: 9px 0 0 0;
       color: $lightGray;
       font-weight: 200;
+      text-transform: initial;
    }
 }
 a.userSettings:hover {
@@ -199,8 +194,7 @@ a.userSettings:hover {
 //======================
 
 .row.searchFilter {
-   //height: 60px;
-   height: 140px;
+   height: 61px;
    margin-top: -10px;
    background-color: $activeTabBkg;
 }
@@ -333,6 +327,69 @@ input[type=search] {
       color: $mainYellow;
       &:hover {
          color: $mainRed;
+      }
+   }
+}
+
+//======================
+// 8. LOWER CONTROLS ---
+//======================
+
+.row.viewToggle {
+   margin: -21px 0 0 0;
+   background-color: $activeTabBkg;
+}
+
+.col.s10.gridCharts {
+   height: 50px;
+}
+
+.toggleButton {
+   #grid {
+      float: left;
+      width: 107px;
+      height: 41px;
+      margin: 0 3px 0 0;
+      padding: 15px 0px 0px 10px;
+      line-height: 14px;
+      background-color: $mainBlue;
+      color: $lightGray;
+      border-radius: 4px 0 0 4px;
+      text-transform: uppercase;
+      &:hover {
+         background-color: $lightGray;
+         color: $bkg;
+      }
+      i {//grid icon
+         font-size: 32px;
+         padding: 0px 20px 0 0;
+      }
+      span {
+         padding: 0px 0px 0px 0px;
+         position: absolute;
+      }
+   }
+   #charts {
+      float:left;
+      width: 117px;
+      height: 41px;
+      padding: 10px 0px 0px 8px;
+      line-height: 24px;
+      background-color: $lightGray;
+      color: $bkg;
+      border-radius: 0 4px 4px 0;
+      text-transform: uppercase;
+      &:hover {
+         background-color: $mainBlue;
+         color: $lightGray;
+      }
+      i {//grid icon
+         font-size: 36px;
+         padding: 0px 14px 0 0;
+      }
+      span {
+         padding: 0px 0px 0px 0px;
+         position: absolute;
       }
    }
 }

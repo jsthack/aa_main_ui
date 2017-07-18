@@ -77,14 +77,9 @@ body {
   height: 100%;
   position: absolute; }
 
-.navPanel {
-  background-color: #212121;
-  width: 80px;
-  height: 970px; }
-
 .sideNav {
   background-color: #212121;
-  height: 970px;
+  height: 1970px;
   width: 81px;
   float: left; }
   .sideNav li {
@@ -101,7 +96,7 @@ body {
     background-color: #448AFF; }
 
 .row.header {
-  height: 54px; }
+  height: 15px; }
 
 .notifications {
   margin: 20px 298px 0 0;
@@ -147,7 +142,8 @@ body {
     font-size: 13px;
     padding: 9px 0 0 0;
     color: #E5E5E5;
-    font-weight: 200; }
+    font-weight: 200;
+    text-transform: initial; }
 
 a.userSettings:hover {
   background-color: #448AFF; }
@@ -180,7 +176,7 @@ a.userSettings:hover {
       font-weight: 600; }
 
 .row.searchFilter {
-  height: 140px;
+  height: 61px;
   margin-top: -10px;
   background-color: #252525; }
 
@@ -286,3 +282,51 @@ input[type=search] {
     color: #FFB300; }
     .closeFilters i:hover {
       color: #dc4646; }
+
+.row.viewToggle {
+  margin: -21px 0 0 0;
+  background-color: #252525; }
+
+.col.s10.gridCharts {
+  height: 50px; }
+
+.toggleButton #grid {
+  float: left;
+  width: 107px;
+  height: 41px;
+  margin: 0 3px 0 0;
+  padding: 15px 0px 0px 10px;
+  line-height: 14px;
+  background-color: #448AFF;
+  color: #E5E5E5;
+  border-radius: 4px 0 0 4px;
+  text-transform: uppercase; }
+  .toggleButton #grid:hover {
+    background-color: #E5E5E5;
+    color: #2d3133; }
+  .toggleButton #grid i {
+    font-size: 32px;
+    padding: 0px 20px 0 0; }
+  .toggleButton #grid span {
+    padding: 0px 0px 0px 0px;
+    position: absolute; }
+
+.toggleButton #charts {
+  float: left;
+  width: 117px;
+  height: 41px;
+  padding: 10px 0px 0px 8px;
+  line-height: 24px;
+  background-color: #E5E5E5;
+  color: #2d3133;
+  border-radius: 0 4px 4px 0;
+  text-transform: uppercase; }
+  .toggleButton #charts:hover {
+    background-color: #448AFF;
+    color: #E5E5E5; }
+  .toggleButton #charts i {
+    font-size: 36px;
+    padding: 0px 14px 0 0; }
+  .toggleButton #charts span {
+    padding: 0px 0px 0px 0px;
+    position: absolute; }

@@ -134,7 +134,7 @@ body {
   float: right;
   text-align: left;
   padding: 1px 0px 0px 4px;
-  margin: 20px 18px 0 0;
+  margin: 20px 14px 0 0;
   border-radius: 4px;
   position: absolute;
   right: 2px; }
@@ -211,7 +211,7 @@ input[type=search] {
 
 .col.s7.filters {
   height: 100%;
-  width: 50%; }
+  width: 65%; }
   .col.s7.filters a.filterButton {
     position: absolute;
     border-radius: 3px;
@@ -238,9 +238,9 @@ input[type=search] {
     height: 23px;
     width: 276px; }
     .filterTags li a {
-      color: #2d3133; }
+      color: black; }
       .filterTags li a:hover {
-        color: #448AFF; }
+        color: white; }
       .filterTags li a .material-icons {
         color: #2d3133;
         font-size: 12px;
@@ -250,21 +250,25 @@ input[type=search] {
         .filterTags li a .material-icons:hover {
           color: #dc4646; }
   .filterTags #tag1 {
-    width: 163px; }
+    width: 163px;
+    background-color: #F9A825; }
     .filterTags #tag1 span {
       margin: 0px 0px 0px 53px;
       position: absolute;
       font-style: italic;
-      color: #FFB300;
+      color: #E5E5E5;
       text-transform: lowercase; }
-  .filterTags #tag2 span {
-    margin: 0px 0px 0px 53px;
-    position: absolute;
-    font-style: italic;
-    color: #FFB300;
-    text-transform: lowercase; }
+  .filterTags #tag2 {
+    background-color: #F9A825; }
+    .filterTags #tag2 span {
+      margin: 0px 0px 0px 53px;
+      position: absolute;
+      font-style: italic;
+      color: #E5E5E5;
+      text-transform: lowercase; }
   .filterTags #tag3 {
-    width: 207px; }
+    width: 207px;
+    background-color: #F9A825; }
 
 .closeFilters {
   display: inline-block;

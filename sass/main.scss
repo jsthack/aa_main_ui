@@ -29,7 +29,6 @@ $bkg: #2d3133;
 $nav: #212121;
 $darkText: $bkg;
 $lightGray: #E5E5E5;
-//$mainBlue: #2979FF;
 $mainBlue: #448AFF;
 $mainYellow: #FFB300;
 $mainRed: #dc4646;
@@ -131,7 +130,7 @@ body { background-color: $bkg; }
    float: right;
    text-align: left;
    padding: 1px 0px 0px 4px;
-   margin: 20px 18px 0 0;
+   margin: 20px 14px 0 0;
    border-radius: 4px;
    position: absolute;
    right: 2px;
@@ -243,7 +242,7 @@ input[type=search] {
 
 .col.s7.filters {
    height: 100%;
-   width: 50%;
+   width: 65%;
    a.filterButton {
       position: absolute;
       border-radius: 3px;
@@ -274,9 +273,9 @@ input[type=search] {
       height: 23px;
       width: 276px;
       a {
-         color: $bkg;
+         color: black;
          &:hover {
-            color: $mainBlue;
+            color: $white;
          }
          .material-icons {
             color: $bkg;
@@ -292,25 +291,28 @@ input[type=search] {
    }
    #tag1 {
       width: 163px;
+      background-color: #F9A825;
       span {
          margin: 0px 0px 0px 53px;
          position: absolute;
          font-style: italic;
-         color: $mainYellow;
+         color: $lightGray;
          text-transform: lowercase;
       }
    }
    #tag2{
+      background-color: #F9A825;
       span {
          margin: 0px 0px 0px 53px;
          position: absolute;
          font-style: italic;
-         color: $mainYellow;
+         color: $lightGray;
          text-transform: lowercase;
       }
    }
    #tag3 {
       width: 207px;
+      background-color: #F9A825;
    }
 }
 

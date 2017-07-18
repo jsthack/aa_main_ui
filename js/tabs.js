@@ -42,7 +42,7 @@
       var calcLeftPos = function(el) {
         return Math.floor(el.position().left + $this.scrollLeft());
       };
-
+s
       // Animates Indicator to active tab.
       // prev_index: Number
       var animateIndicator = function(prev_index) {

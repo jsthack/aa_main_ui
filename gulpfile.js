@@ -25,7 +25,7 @@ gulp.task('markup', function() {
 
 //JAVASCRIPT
 var jsFiles = 'js/**/*.js',
-    jsDest = 'dist/scripts';
+    jsDest = 'bin/scripts';
 
 gulp.task('scripts', function() {
     return gulp.src(jsFiles)
@@ -41,4 +41,5 @@ gulp.task('default',function() {
    livereload.listen();
    gulp.watch('sass/**/*.scss',['styles']);
    gulp.watch('*.html',['markup']);
+   gulp.watch('*.js',['javascript']);
 });

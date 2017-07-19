@@ -17,6 +17,8 @@
 6. TAB BAR -------------
 7. SEARCH BAR ----------
 8. FILTERS -------------
+8. LOWER CONTROLS ------
+8. CHARTS MENU ---------
 ----------------------*/
 
 //======================
@@ -32,6 +34,7 @@ $lightGray: #E5E5E5;
 $mainBlue: #448AFF;
 $mainYellow: #FFB300;
 $mainRed: #dc4646;
+$mainBorder: #464646;
 $tabBkg: #292b2d;
 $activeTabBkg: #252525;
 
@@ -332,25 +335,28 @@ input[type=search] {
 }
 
 //======================
-// 8. LOWER CONTROLS ---
+// 9. LOWER CONTROLS ---
 //======================
 
 .row.viewToggle {
+   height: 67px;
    margin: -21px 0 0 0;
    background-color: $activeTabBkg;
+   border-top: 1px solid $mainBorder;
 }
 
 .col.s10.gridCharts {
    height: 50px;
+   padding-top: 15px;
 }
 
 .toggleButton {
    #grid {
       float: left;
       width: 107px;
-      height: 41px;
+      height: 37px;
       margin: 0 3px 0 0;
-      padding: 15px 0px 0px 10px;
+      padding: 13px 0px 0px 16px;
       line-height: 14px;
       background-color: $mainBlue;
       color: $lightGray;
@@ -361,8 +367,8 @@ input[type=search] {
          color: $bkg;
       }
       i {//grid icon
-         font-size: 32px;
-         padding: 0px 20px 0 0;
+         font-size: 24px;
+         padding: 0px 15px 0 0;
       }
       span {
          padding: 0px 0px 0px 0px;
@@ -372,8 +378,8 @@ input[type=search] {
    #charts {
       float:left;
       width: 117px;
-      height: 41px;
-      padding: 10px 0px 0px 8px;
+      height: 37px;
+      padding: 7px 0px 0px 12px;
       line-height: 24px;
       background-color: $lightGray;
       color: $bkg;
@@ -384,12 +390,59 @@ input[type=search] {
          color: $lightGray;
       }
       i {//grid icon
-         font-size: 36px;
-         padding: 0px 14px 0 0;
+         font-size: 28px;
+         padding: 0 13px 0 1px;
       }
       span {
          padding: 0px 0px 0px 0px;
          position: absolute;
+      }
+   }
+}
+
+.row.chartsMenu {
+   background-color: $activeTabBkg;
+}
+
+//======================
+// 10. CHARTS MENU ------
+//======================
+
+.dropdownContainer {
+    padding: 0px 0px 0px 93px;
+}
+
+.dropdown-button.btn {
+   background-color: $lightGray;
+   color: $bkg;
+   font-size: 14px;
+   text-transform: capitalize;
+   height: 31px;
+   width: 195px;
+   padding: 0px 43px 0px 0px;
+   i {//dropdown arrow icon
+      padding: 0px 0px 0px 22px;
+      position: absolute;
+   }
+}
+
+.dropdown-content{
+   top: 236.997px !important;
+   li{
+      min-height: 0px;
+      line-height: -6.5rem;
+      height: 34px;
+      padding: 0;
+      a {
+         color: $bkg;
+         padding: 18px 11px;
+         line-height: .5px;
+         height: 33px;
+         font-size: 14px;
+         &:hover {
+            background-color: $mainBlue;
+            color: $lightGray;
+         }
       }
    }
 }
